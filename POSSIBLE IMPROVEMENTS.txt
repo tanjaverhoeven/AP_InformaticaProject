@@ -1,0 +1,6 @@
+Possible improvements that will benefit the application but will require too much time to implement: 
+- Make use of data objects.
+- store images in the parent objects instead of seperating them into another database collection
+- make more use of things like lazy loading to increase performance
+- breadcrumbs in detailpage
+- Add to homescreen as app.

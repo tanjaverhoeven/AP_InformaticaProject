@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+    springboot:
+        build: ./backend
+        container_name: java-app
+        external_links:
+           - database
+        restart: always
+        command: java -jar /target/projectteambisfits-0.0.1-SNAPSHOT.jar
+        environment:
+           SPRING_PROFILES_ACTIVE: deploy
+    myapp:
+        container_name: my-app
+        restart: always
+        external_links:
+           -  springboot:tomcat
+        build:
+           context: ./frontend
+           dockerfile: Dockerfile
+        ports:
+           - '80:80'
+        volumes: 
+           - ./.docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+    database:
+       image: 'mongo:latest'
+       container_name: mongo-context
+       volumes:
+         - data-volume:/data/db
+volumes:
+  data-volume:
+

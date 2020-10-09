@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjectteambisfitsApplication<projectteambisfits>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "edu.ap.projectteambisfits.ProjectteambisfitsApplication",
+            "projectName": "projectteambisfits",
+            "args": ""
+        }
+    ]
+}

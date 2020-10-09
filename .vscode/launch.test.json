@@ -1,0 +1,28 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "projectteambisfits",
+                "projectName": "projectteambisfits",
+                "workingDirectory": "d:\\ProjectBisfitsFinal\\bisfits",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "projectteambisfits",
+                "projectName": "projectteambisfits",
+                "workingDirectory": "d:\\ProjectBisfitsFinal\\bisfits",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
